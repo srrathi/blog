@@ -26,3 +26,4 @@ src/
 └── templates
     └── blog.js
 
+[](modified-dir-structure.png)
