@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+.title{
+  text-weight: bold;
+}
+
+.nav-list{
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  margin-bottom: 1.5rem;
+}
+
+.nav-item{
+ text-decoration: none;
+ color: #999999;
+ font-size: .9rem;
+  margin-right: 1.3rem;
+}
+
+.nav-item::hover{
+  color: #666666;
+}
+.active-nav-item{
+  color: #333333;
+}

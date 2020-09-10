@@ -1,5 +1,11 @@
 import React from "react"
+import {Link, graphql} from "gatsby";
+import Layout from "../components/templates/layout";
 
-export default function Home() {
-  return <div>Hello world!</div>
+export default function Blog() {
+  return(
+    <Layout>
+      <p>This is Blog</p>
+    </Layout>
+  )
 }

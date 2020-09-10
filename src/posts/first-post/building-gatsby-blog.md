@@ -26,4 +26,6 @@ src/
 └── templates
     └── blog.js
 
-[](modified-dir-structure.png)
+[No image shown yet because pluggin not applied](modified-dir-structure.png)
+
+now setting up the blog

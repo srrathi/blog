@@ -1,0 +1,24 @@
+.root{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.outer-container{
+  width: 75%;
+}
+@media only screen and (max-width: 480px) {
+  .outer-container{
+    width: 90%;
+  }
+}
+
+.container{
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.content {
+  flex-grow: 1;
+}
