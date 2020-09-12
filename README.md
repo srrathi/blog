@@ -15,6 +15,6 @@ Currently under development it will be a place where I share my thoughts, experi
 - [X] Setup plugins for images
 - [x] Style Blog post
 - [X] Style home Page
-- [ ] React Helmet - Meta description and title 
+- [X] React Helmet - Meta description and title 
 - [ ] Deploy site
 - [ ] Create branch `production` for CI/CD pipeline

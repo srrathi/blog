@@ -2,10 +2,12 @@ import React from "react"
 import {Link} from "gatsby";
 
 import Layout from "../components/templates/layout";
+import Head from "../components/head";
 import aboutStyles from '../components/component-styles/about.module.scss'
 export default function Home() {
   return(
     <Layout>
+      <Head title="About" />
       <h3>Hey</h3>
       <p>I am just someone who is interested in understanding how stuff around us works, especially the software side of things.</p>
       <p>This blog is a way for me to keep track of my learnigs and maybe make some like minded friends along the way</p>

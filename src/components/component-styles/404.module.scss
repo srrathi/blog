@@ -1,0 +1,21 @@
+.container {
+  margin-top: 3rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-bottom:1.5rem;
+  }
+  h2{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+    em{
+      color:  #C70039 ;
+    }
+  }
+}
