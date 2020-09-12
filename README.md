@@ -13,7 +13,7 @@ Currently under development it will be a place where I share my thoughts, experi
 - [X] Setup Dynamic building of pages for each post
 - [X] Setup Article list on home page 
 - [X] Setup plugins for images
-- [ ] Style Blog post
-- [ ] Style home Page 
+- [x] Style Blog post
+- [X] Style home Page 
 - [ ] Deploy site
 - [ ] Create branch `production` for CI/CD pipeline
