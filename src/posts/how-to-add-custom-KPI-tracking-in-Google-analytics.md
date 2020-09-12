@@ -24,12 +24,11 @@ But you might wonder that if you can only get data then this API does not solve 
 
 At this point I had lost all hopes and decided that I would just store the data for each day on firebase (*In a somewhat ordered fashion for now*) and get the data from there. Later, we could send all this data to **Google Data Studio** to get a more graphical understanding to the data.
 
-#### But Wait! Something good finally happened (*well maybe not good, but.... you'll see*)
+#### Something good finally happened (*well maybe not good, but.... you'll see*)
 Our main company product is a web app which, to work in the background and regular work-flow, also has a browser extension. During all this hassle we were at the point of releasing a new version of the app. 
 While we were in the process of updating the extension for Firefox, the review report by Firefox did not approve the current version of the app for certain reasons. The good part was that they sent a thorough report of why they did not approve it and how to fix the problems. In the report there was a link pointing to an article titled [Using Google Analytics in extensions](https://blog.mozilla.org/addons/2016/05/31/using-google-analytics-in-extensions/)
 
-###### Following is an excerpt from the article
-
+**Following is an excerpt from the article**
 >This blog post is meant to show the safer ways of using GA, not advocate its unrestricted use.
 
 >I created a branch of one of my add-ons to serve as a demo. The add-on is a WebExtension that injects a content script into some AMO pages to add links that are useful to admins and reviewers. The diff for the branch shouldn’t take much time to read and understand. It mostly comes down to this XHR:
@@ -68,11 +67,11 @@ let hitGA = () => {
 
 And then I copied this whole thing into Firefox's console and *volla* I got a successful **200 OK** Response. 
 
-***But***
+***But,***\
 The event was not seen in firebase analytics. I thought that this might had been because firebase had applied some sort of filtering system for incoming request to avoid tracking *bogus requests* like this.
 So, frustrated and tired after the day's effort I decided to sleep on it.
 
-***But***
+***But,***\
 The next day, when I checked Google analytics for the event (*with no hope whatsoever*) the event was there!!!
 
 Finally!

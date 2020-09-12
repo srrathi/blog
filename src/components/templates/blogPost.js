@@ -2,6 +2,7 @@ import React from "react";
 import { graphql} from "gatsby";
 
 import Layout from './layout';
+import blogPostStyles from '../component-styles/blogPost.module.scss';
 
 export const query = graphql`
     query(
@@ -29,15 +30,15 @@ const BlogPost = (props) => {
   // console.log(props.data)
   return(
     <Layout>
-      <div>
-        <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-        <ol>
+      <div className={blogPostStyles.header}>
+        <h1 className={blogPostStyles.title}>{props.data.markdownRemark.frontmatter.title}</h1>
+        <ol className={blogPostStyles.tagList}>
           {props.data.markdownRemark.frontmatter.tags.map(tag => {
-            return <li>{tag}</li>
+            return <li className={blogPostStyles.tag}><i>{tag}</i></li>
           })}
         </ol>
       </div>
-      <div dangerouslySetInnerHTML = {{ __html: props.data.markdownRemark.html}}>
+      <div className={blogPostStyles.content} dangerouslySetInnerHTML = {{ __html: props.data.markdownRemark.html}}>
       </div>
     </Layout>
   )

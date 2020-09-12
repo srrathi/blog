@@ -60,7 +60,6 @@ Also, if you want to execute this in a `Node` environment you will have to insta
 ```
 npm install xmlhttprequest
 ```
-
 And there you go!
 
 >This does point out that anyone with your `GA_TRACKING_ID` can raise `bogus events` and spoil your analytics but as I said *this article is for educational purposes only*
