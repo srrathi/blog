@@ -3,14 +3,11 @@ title: "Send custom events to Google Analytics using AJAX"
 date: 11/09/2020
 tags: [Google Analytics, AJAX]
 ---
+***This information is for educational purposes only.***
 
-With the help of this article you will be able to send custom events
+This method is used by browser add-ons to track user events as they are not allowed to have third party scripts in their source code.
 
-*This is for education purposes only.*
-
-This method is used by browser add-ons to track user events as they are not allowed to have third party scripts in their source code
-
-The code for doing so is follows
+The code for doing so is follows:
 
 ```
 let hitGA = () => {
@@ -39,16 +36,16 @@ We see that in the second last line we are sending a `POST` request to the endpo
 
 The most important thing here is the `message` and the object `event`
 
-`event` specifies the event you want to track in analytics. If you read the [official documentation](https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters#events)  you will see that every event requires a `category` and `action` the `label` and `value` are optional 
+`event` specifies the event you want to track in analytics. If you read the [official documentation](https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters#events)  you will see that every event requires a `category` and `action`, the `label` and `value` are optional 
 
-`message` is the actual  <!-- Something I have to learn -->
+`message` is the actual  data that send to the endpoint.
 <!--  -->
-here `message` has other ${<!-- Something -->} as well. The most important of which are
+Here, `message` consists of many attributes. A few important ones are:
 1. `tid`  is analytics tracking Id You can get the `GA_TRACKING_ID` from your google analytics admin settings pannel.
 
 2. `cid` is the customer id. This is used to recognise the user to whom the event is associated. For testing purposes, to get a valid `cid` follow the steps given in [this article](https://www.owox.com/blog/use-cases/google-analytics-client-id/)
 
-3. All the ${<!-- Something -->} starting with *e* are used to define the event. We pass its values from the object that we created.
+3. All the attributes starting with *e* are used to define the event. We pass its values from the object that we created.
 
 >**Note**: *The event value, though optional, must be an integer. everything else can be a string*
 
@@ -62,8 +59,10 @@ npm install xmlhttprequest
 ```
 And there you go!
 
->This does point out that anyone with your `GA_TRACKING_ID` can raise `bogus events` and spoil your analytics but as I said *this article is for educational purposes only*
+>This does point out that anyone with your `GA_TRACKING_ID` can raise _bogus events_ and spoil your analytics.
+>
+>But, as I said, *this article is for educational purposes only.*
 
 ---
 
-If you are curious, check out [how I was able to learn about this](). 
+If you are curious, check out [how I was able to learn about this](/how-to-add-custom-KPI-tracking-in-Google-analytics). 

@@ -20,7 +20,7 @@ The firebase SDK method `setUserProperty`, that was supposed to set the value of
 ## Second approach *The title of the article. Let's answer the how*
 I started searching for a way to raise custom events on Google analytics using some API in my firebase functions. At first, the only API that I could find was the `Google Analytics Reporting V4`.
 This API was pitched everywhere as a way to get analytics data by performing all sorts of complex queries (*thanks to the number of query parameters that it provides. THERE ARE A TON!*)
-But you might wonder that if you can only get data then this API does not solve our problem, and you are right. The only reason I even considered exploring it was because the only endpoint that it had handled post requests (*Little did I know that `POST` does not always mean sending data to be stored somewhere you want*)  `More on this later (**To be searched**)`
+But you might wonder that if you can only get data then this API does not solve our problem, and you are right. The only reason I even considered exploring it was because the only endpoint that it had handled post requests (*Little did I know that `POST` does not always mean sending data to be stored somewhere you want*) 
 
 At this point I had lost all hopes and decided that I would just store the data for each day on firebase (*In a somewhat ordered fashion for now*) and get the data from there. Later, we could send all this data to **Google Data Studio** to get a more graphical understanding to the data.
 
@@ -77,7 +77,7 @@ The next day, when I checked Google analytics for the event (*with no hope whats
 Finally!
 
 So I implemented the changes in the firebase function and then tried to test it after deployment. It executed successfully and I got a proper response but again there was no such event in analytics.
-Turns out that it takes time to track events on firebase (*Why GOOGLE? **WHY?!!***)
+Turns out that it takes time to track events on firebase (_Why GOOGLE? **WHY?!!**_)
 
 So, like every good story, I successfully committed the code and the program ran happily ever after.
 
