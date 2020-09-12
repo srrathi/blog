@@ -2,7 +2,6 @@ import React from "react"
 import {Link, graphql, useStaticQuery} from "gatsby";
 
 import Layout from "../components/templates/layout";
-import Head from "../components/head";
 import blogStyles from '../components/component-styles/index.module.scss';
 
 export default function Blog() {
@@ -26,7 +25,6 @@ export default function Blog() {
   `)
   return(
     <Layout>
-      <Head title="Home" />
       <h4>All articles </h4>
       <hr />
       <ol className={blogStyles.list}>
