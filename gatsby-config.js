@@ -5,6 +5,7 @@
  */
 
 module.exports = {
+  pathPrefix: `/blog`,
   siteMetadata: {
     title: "Let's Learn Together!",
     author: "Navdeep"
