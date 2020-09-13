@@ -1,6 +1,6 @@
 ---
 title: "How to track custom KPIs with Google Analytics"
-date: 11/09/2020
+date: 12/09/2020
 tags: [API, Google Analytics, AJAX]
 ---
 
