@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql} from "gatsby";
 
+import Head from "../head";
 import Layout from './layout';
 import blogPostStyles from '../component-styles/blogPost.module.scss';
 
@@ -30,6 +31,7 @@ const BlogPost = (props) => {
   // console.log(props.data)
   return(
     <Layout>
+      <Head title={props.data.markdownRemark.frontmatter.title} />
       <div className={blogPostStyles.header}>
         <h1 className={blogPostStyles.title}>{props.data.markdownRemark.frontmatter.title}</h1>
         <ol className={blogPostStyles.tagList}>
