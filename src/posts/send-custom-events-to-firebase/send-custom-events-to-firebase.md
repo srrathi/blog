@@ -2,6 +2,7 @@
 title: "Send custom events to Google Analytics using AJAX"
 date: 11/09/2020
 tags: [Google Analytics, AJAX]
+category: [web-dev]
 ---
 ***This information is for educational purposes only.***
 
