@@ -2,10 +2,9 @@ import React from "react"
 
 import footerStyles from "./component-styles/footer.module.scss";
 
-export default function Footer({author}) {
+export default function Footer({page, author}) {
   let displaySubscriptionForm = true;
-  const path = document.location.pathname
-  if( path === "/" || path === "/about" ){
+  if( page === "Home" || page === "about" ){
     displaySubscriptionForm = false;
   }
   return(

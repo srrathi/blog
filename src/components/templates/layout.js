@@ -26,7 +26,7 @@ export default function Layout(props) {
             <Header title={data.site.siteMetadata.title}/>
             {props.children}
           </div>
-          <Footer author={data.site.siteMetadata.author}/>
+          <Footer page={props.page} author={data.site.siteMetadata.author}/>
         </div>
       </div>
     </div>

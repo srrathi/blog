@@ -6,7 +6,7 @@ import Layout from "../components/templates/layout";
 import aboutStyles from '../components/component-styles/about.module.scss';
 export default function Home() {
   return(
-    <Layout>
+    <Layout page="about">
       <Head title="About"/>
       <h3>Hey</h3>
       <p>I am just someone who is interested in understanding how stuff around us works, especially the software side of things.</p>
