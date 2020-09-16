@@ -30,7 +30,7 @@ export default function Blog() {
     }
   `)
   return(
-    <Layout>
+    <Layout page="Home">
       <Head title="Home" />
       <h4>All articles </h4>
       <hr />
