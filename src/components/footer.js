@@ -4,7 +4,7 @@ import footerStyles from "./component-styles/footer.module.scss";
 
 export default function Footer({author}) {
   let displaySubscriptionForm = true;
-  const path = window.location.pathname
+  const path = document.location.pathname
   if( path === "/" || path === "/about" ){
     displaySubscriptionForm = false;
   }
