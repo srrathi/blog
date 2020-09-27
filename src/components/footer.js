@@ -14,7 +14,7 @@ export default function Footer({page, author}) {
           action="https://tinyletter.com/nsr-py"
           method="post" 
           target="popupwindow"
-          onsubmit="window.open('https://tinyletter.com/nsr-py', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+          onSubmit="window.open('https://tinyletter.com/nsr-py', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
           <input 
             type="email" 
             name="email" 

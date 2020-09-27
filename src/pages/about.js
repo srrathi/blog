@@ -16,7 +16,7 @@ export default function Home() {
       <p></p>
       <hr></hr>
       <p>Connect with me on twitter at <Link to="https://twitter.com/NRathore404" target="_blank" className={aboutStyles.link}>@NRathore404</Link></p>
-      <p>If you want to get about new posts; <Link to="https://tinyletter.com/nsr-py" target="_blank" className={aboutStyles.link}>Subscribe</Link> to be a part of my email list</p>
+      <p>If you want to get notified about new posts; <Link to="https://tinyletter.com/nsr-py" target="_blank" className={aboutStyles.link}>Subscribe</Link> to be a part of my email list</p>
     </Layout>
   )
 }
