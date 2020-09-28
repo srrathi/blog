@@ -4,6 +4,7 @@ date: 10/09/2020
 tags: [API, Google Analytics, AJAX]
 category: [internet]
 ---
+> TL;DR: I sent data through an AJAX request to an end point of google analytics. Follow [this article](/send-custom-events-to-google-analytics) for step-by-step instructions
 
 ## The task that I was trying to complete
 I needed a away to get a analytics report for the number of users whose premium plan is active on a particular day. This would then become a company KPI for the product.
