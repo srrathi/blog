@@ -1,4 +1,4 @@
-## This is my blog
+## This is My Blog
 
 My Blog is a place where I share my thoughts, experiences and just things that I learn. Care to [check it out](https://nsr-py.github.io/blog/)?
 
